@@ -1,0 +1,22 @@
+local Players = game:GetService("Players")
+ 
+ 
+if _G.SystemFound ~= true then
+    for i,v in pairs(Players:GetPlayers()) do
+        if v.Name == "Oderi" then
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "System note",Text = "Owner W1ryyx and Oderi(itzperson) is on the server.",Duration = 7;})
+            _G.SystemFound = true
+        end
+    end
+end
+ 
+if Players.LocalPlayer.Name == "nigger" then
+    for i = 1,6 do
+        local args = {[1] = "Bye bye: W1ryyx <3",[2] = "All"}
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+    end
+    task.wait(1)
+    Players.LocalPlayer:Kick("Sorry g@y")
+end
+ 
+return 2
